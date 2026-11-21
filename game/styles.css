@@ -1,0 +1,38 @@
+/* Twin Tales — Spot the Difference: page chrome around the game canvas. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #14122a;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+#stage {
+  width: min(1280px, 100vw);
+  padding: 12px;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  cursor: crosshair;
+  background: #1b1930;
+}
+
+#fallback {
+  color: #b8b0a0;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0 0;
+}
